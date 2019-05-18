@@ -1,0 +1,16 @@
+.ice-cream-taste-summary {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 10px;
+}
+.delete-button {
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 0px 20px;
+  height: 32px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}

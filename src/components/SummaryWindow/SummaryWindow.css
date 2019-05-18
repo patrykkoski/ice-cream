@@ -1,0 +1,42 @@
+.summary-window {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.summary-window-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid blue;
+  border-radius: 10px;
+  width: 50%;
+  height: 30%;
+}
+.summary-window-content h3 {
+  text-align: center;
+  border-bottom: 1px solid gray;
+}
+.summary-button-section{
+  text-align: center;
+}
+.summary-button-section button{
+  padding: 15px;
+  margin: 10px;
+  color: white;
+  border-radius: 3px;
+  border: none;
+}
+.summary-button-section .button-back {
+  background-color: steelblue;
+}
+.summary-button-section .button-cancel {
+  background-color: red;
+}
+.summary-button-section .button-order {
+  background-color: green;
+}

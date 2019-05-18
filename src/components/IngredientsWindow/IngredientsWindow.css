@@ -1,0 +1,39 @@
+.ingredients-window-wrapper {
+  width: 80%;
+  height: 100vh;
+}
+.ingredients-window {
+  display: flex;
+}
+.ingredients-window h3 {
+  text-align: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+.ingredients-window-wrapper header {
+  text-align: center;
+  padding: 5px 0px;
+  color: white;
+  background-color: rgb(42, 43, 58);
+  border-bottom: 1px solid lightgray;
+}
+.ingredients-window-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  overflow-y: scroll;
+  height: 85vh;
+}
+.all-tastes {
+  width: 50%;
+  border-right: 1px solid gray;
+}
+.all-decorations {
+  width: 25%;
+}
+.all-sauces {
+  width: 25%;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}

@@ -1,0 +1,29 @@
+.ice-cream-window {
+  width: 20%;
+  height: 100vh;
+  border-left: 1px solid lightgray;
+  text-align: center;
+  background-color: rgb(42, 43, 58);
+  color: white;
+  position: relative;
+}
+.ice-cream-window h3 {
+  border-bottom: 1px solid white;
+}
+.ice-cream-taste-summary-wrapper {
+  text-align: center;
+}
+.add-to-order{
+  border: none;
+  border-radius: 0px;
+  background-color: green;
+  color: white;
+  padding: 10px 30px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.button-show-order{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+}
