@@ -8,7 +8,8 @@ class Builder extends Component {
     decorationData: [],
     saucesData: [],
     iceCream: { tastes: ["", ""], decoration: "", sauce: "" },
-    isSummaryVisible: false
+    isSummaryVisible: false,
+    orderSummary: []
   };
   componentDidMount() {
     axios
@@ -91,12 +92,22 @@ class Builder extends Component {
     this.setState({ iceCream: statePlaceholder });
   };
 
-  showSummary = () => {
-    if (this.state.isSummaryVisible) {
-      this.setState({ isSummaryVisible: false });
+  addIceCreamToSummary = () => {
+    if (this.state.iceCream.tastes[0] != "") {
+      let statePlaceholder = this.state.orderSummary;
+      statePlaceholder.push(this.state.iceCream);
+      this.setState({
+        iceCream: { tastes: ["", ""], decoration: "", sauce: "" },
+        orderSummary: statePlaceholder
+      });
     } else {
-      this.setState({ isSummaryVisible: true });
+      alert("Dodaj smaki");
     }
+  };
+
+  switchSummary = () => {
+    let summaryPlaceholder = this.state.isSummaryVisible;
+    this.setState({ isSummaryVisible: !summaryPlaceholder });
   };
 
   render() {
@@ -113,8 +124,10 @@ class Builder extends Component {
           iceCreamDecorationSummary={this.state.iceCream.decoration}
           iceCreamSauceSummary={this.state.iceCream.sauce}
           deleteTasteFromIceCream={this.deleteTasteFromIceCream}
-          showSummary={this.showSummary}
+          switchSummary={this.switchSummary}
+          addIceCreamToSummary={this.addIceCreamToSummary}
           isSummaryVisible={this.state.isSummaryVisible}
+          orderSummary={this.state.orderSummary}
         />
       </div>
     );

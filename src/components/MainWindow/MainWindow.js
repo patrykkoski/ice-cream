@@ -20,10 +20,15 @@ const mainWindow = props => {
           iceCreamDecorationSummary={props.iceCreamDecorationSummary}
           iceCreamSauceSummary={props.iceCreamSauceSummary}
           deleteTasteFromIceCream={props.deleteTasteFromIceCream}
-          showSummary={props.showSummary}
+          switchSummary={props.switchSummary}
+          addIceCreamToSummary={props.addIceCreamToSummary}
         />
       </div>
-      <SummaryWindow isSummaryVisible={props.isSummaryVisible} />
+      <SummaryWindow
+        isSummaryVisible={props.isSummaryVisible}
+        switchSummary={props.switchSummary}
+        orderSummary={props.orderSummary}
+      />
     </div>
   );
 };

@@ -21,10 +21,12 @@ const iceCreamWindow = props => {
       <IceCreamDecorationSummary decoration={props.iceCreamDecorationSummary} />
       <h3>Polewa:</h3>
       <IceCreamSauceSummary sauce={props.iceCreamSauceSummary} />
-      <button className="add-to-order" onClick={props.showSummary}>
+      <button className="add-to-order" onClick={props.addIceCreamToSummary}>
         Dodaj loda do zamówienia
       </button>
-      <button className="button-show-order">PODSUMOWANIE ZAMÓWIENIA</button>
+      <button className="button-show-order" onClick={props.switchSummary}>
+        PODSUMOWANIE ZAMÓWIENIA
+      </button>
     </div>
   );
 };
