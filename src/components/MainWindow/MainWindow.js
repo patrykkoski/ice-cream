@@ -22,12 +22,20 @@ const mainWindow = props => {
           deleteTasteFromIceCream={props.deleteTasteFromIceCream}
           switchSummary={props.switchSummary}
           addIceCreamToSummary={props.addIceCreamToSummary}
+          removeIngredientsFromIceCream={props.removeIngredientsFromIceCream}
         />
       </div>
       <SummaryWindow
         isSummaryVisible={props.isSummaryVisible}
         switchSummary={props.switchSummary}
         orderSummary={props.orderSummary}
+        removeIceCreamFromSummary={props.removeIceCreamFromSummary}
+        showCancelOrderWindow={props.showCancelOrderWindow}
+        isCancelOrderWindowVisible={props.isCancelOrderWindowVisible}
+        cancelOrder={props.cancelOrder}
+        switchConfirmWindow={props.switchConfirmWindow}
+        isConfirmOrderWindowVisible={props.isConfirmOrderWindowVisible}
+        confirmOrder={props.confirmOrder}
       />
     </div>
   );

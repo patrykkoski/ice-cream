@@ -1,4 +1,6 @@
 import React from "react";
+import CancelOrderWindow from "./CancelOrderModal/CancelOrderWindow";
+import ConfirmOrderWindow from "./ConfirmOrderWindow/ConfirmOrderWindow";
 import "./SummaryWindow.css";
 
 const summaryWindow = props => {
@@ -14,7 +16,12 @@ const summaryWindow = props => {
           <p>{orderItem.decoration}</p>
           <h4>Polewa</h4>
           <p>{orderItem.sauce}</p>
-          <button className="button-cancel">USUŃ LODA</button>
+          <button
+            className="button-cancel"
+            onClick={() => props.removeIceCreamFromSummary(i)}
+          >
+            USUŃ LODA
+          </button>
         </div>
       );
     });
@@ -27,10 +34,30 @@ const summaryWindow = props => {
             <button className="button-back" onClick={props.switchSummary}>
               POWRÓT
             </button>
-            <button className="button-cancel">ANULUJ ZAMÓWIENIA</button>
-            <button className="button-order">ZŁÓŻ ZAMÓWIENIE</button>
+            <button
+              className="button-cancel"
+              onClick={props.showCancelOrderWindow}
+            >
+              ANULUJ ZAMÓWIENIA
+            </button>
+            <button
+              className="button-order"
+              onClick={props.switchConfirmWindow}
+            >
+              ZŁÓŻ ZAMÓWIENIE
+            </button>
           </div>
         </div>
+        <CancelOrderWindow
+          showCancelOrderWindow={props.showCancelOrderWindow}
+          isCancelOrderWindowVisible={props.isCancelOrderWindowVisible}
+          cancelOrder={props.cancelOrder}
+        />
+        <ConfirmOrderWindow
+          isConfirmOrderWindowVisible={props.isConfirmOrderWindowVisible}
+          switchConfirmWindow={props.switchConfirmWindow}
+          confirmOrder={props.confirmOrder}
+        />
       </div>
     );
   }

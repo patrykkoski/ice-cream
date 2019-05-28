@@ -13,17 +13,40 @@
 .ice-cream-taste-summary-wrapper {
   text-align: center;
 }
-.add-to-order{
+.add-to-order {
   border: none;
   border-radius: 0px;
   background-color: green;
   color: white;
-  padding: 10px 30px;
+  padding: 30px 30px;
   box-shadow: 2px 2px 5px rgb(0, 0, 0);
-}
-.button-show-order{
+  width: 100%;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 50px;
+  left: 0;
+  bottom: 160px;
+}
+.clear-ice-cream {
+  border: none;
+  border-radius: 0px;
+  background-color: red;
+  width: 100%;
+  color: white;
+  padding: 30px 30px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+  position: absolute;
+  left: 0;
+  bottom: 80px;
+}
+
+.button-show-order {
+  border: none;
+  border-radius: 0px;
+  background-color: steelblue;
+  width: 100%;
+  color: white;
+  padding: 30px 30px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+  position: absolute;
+  left: 0;
+  bottom: 0px;
 }

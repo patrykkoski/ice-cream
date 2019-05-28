@@ -24,6 +24,12 @@ const iceCreamWindow = props => {
       <button className="add-to-order" onClick={props.addIceCreamToSummary}>
         Dodaj loda do zamówienia
       </button>
+      <button
+        className="clear-ice-cream"
+        onClick={props.removeIngredientsFromIceCream}
+      >
+        Usuń obecnego loda
+      </button>
       <button className="button-show-order" onClick={props.switchSummary}>
         PODSUMOWANIE ZAMÓWIENIA
       </button>

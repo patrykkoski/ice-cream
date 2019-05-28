@@ -11,15 +11,25 @@
 .summary-window-content h3 {
   text-align: center;
   border-bottom: 1px solid gray;
+  background: rgb(42, 43, 58);
+  color: white;
+  margin-top: 0px;
+  padding: 10px;
 }
 .summary-button-section {
   text-align: center;
+  background-color: rgb(42, 43, 58);
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  height: 100px;
 }
 .summary-button-section button {
-  padding: 15px;
+  padding: 25px;
+  width: 250px;
   margin: 10px;
   color: white;
-  border-radius: 3px;
+  box-shadow: 0px 0px 10px 2px rgb(32, 32, 32);
   border: none;
 }
 .summary-button-section .button-back {
@@ -50,6 +60,9 @@
 }
 .orders-ice-cream h4 {
   border-bottom: 1px solid gold;
+}
+.orders-ice-cream p{
+  color: gold;
 }
 .orders-ice-cream .button-cancel {
   background-color: red;

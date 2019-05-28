@@ -9,7 +9,9 @@ class Builder extends Component {
     saucesData: [],
     iceCream: { tastes: ["", ""], decoration: "", sauce: "" },
     isSummaryVisible: false,
-    orderSummary: []
+    orderSummary: [],
+    isCancelOrderWindowVisible: false,
+    isConfirmOrderWindowVisible: false
   };
   componentDidMount() {
     axios
@@ -92,6 +94,20 @@ class Builder extends Component {
     this.setState({ iceCream: statePlaceholder });
   };
 
+  removeIngredientsFromIceCream = () => {
+    let statePlaceholder = this.state.iceCream;
+    statePlaceholder.tastes = ["", ""];
+    statePlaceholder.decoration = "";
+    statePlaceholder.sauce = "";
+    this.setState({
+      iceCream: {
+        tastes: statePlaceholder.tastes,
+        decoration: statePlaceholder.decoration,
+        sauce: statePlaceholder.sauce
+      }
+    });
+  };
+
   addIceCreamToSummary = () => {
     if (this.state.iceCream.tastes[0] != "") {
       let statePlaceholder = this.state.orderSummary;
@@ -105,9 +121,60 @@ class Builder extends Component {
     }
   };
 
+  removeIceCreamFromSummary = number => {
+    let summaryStatePlaceholder = this.state.orderSummary;
+    summaryStatePlaceholder.splice(number, 1);
+    this.setState({ orderSummary: summaryStatePlaceholder });
+  };
+
   switchSummary = () => {
     let summaryPlaceholder = this.state.isSummaryVisible;
     this.setState({ isSummaryVisible: !summaryPlaceholder });
+  };
+
+  showCancelOrderWindow = () => {
+    let statePlaceholder = this.state.isCancelOrderWindowVisible;
+    this.setState({ isCancelOrderWindowVisible: !statePlaceholder });
+  };
+
+  cancelOrder = () => {
+    let statePlaceholder = this.state.isCancelOrderWindowVisible;
+    this.setState({
+      orderSummary: [],
+      isSummaryVisible: false,
+      isCancelOrderWindowVisible: !statePlaceholder,
+      iceCream: {
+        tastes: ["", ""],
+        decoration: "",
+        sauce: ""
+      }
+    });
+  };
+
+  switchConfirmWindow = () => {
+    let statePlaceholder = this.state.isConfirmOrderWindowVisible;
+    if (this.state.orderSummary.length > 0) {
+      this.setState({ isConfirmOrderWindowVisible: !statePlaceholder });
+    } else {
+      alert("Nie można zatwierdzić pustego zamówienia");
+    }
+  };
+
+  confirmOrder = () => {
+    const o = this.state.orderSummary;
+    axios
+      .post("/test.json", o)
+      .then(response => {
+        console.log("Posted");
+        this.setState({
+          iceCream: { tastes: ["", ""], decoration: "", sauce: "" },
+          isSummaryVisible: false,
+          orderSummary: [],
+          isCancelOrderWindowVisible: false,
+          isConfirmOrderWindowVisible: false
+        });
+      })
+      .catch(error => console.log(error));
   };
 
   render() {
@@ -124,10 +191,18 @@ class Builder extends Component {
           iceCreamDecorationSummary={this.state.iceCream.decoration}
           iceCreamSauceSummary={this.state.iceCream.sauce}
           deleteTasteFromIceCream={this.deleteTasteFromIceCream}
+          removeIngredientsFromIceCream={this.removeIngredientsFromIceCream}
           switchSummary={this.switchSummary}
           addIceCreamToSummary={this.addIceCreamToSummary}
           isSummaryVisible={this.state.isSummaryVisible}
           orderSummary={this.state.orderSummary}
+          removeIceCreamFromSummary={this.removeIceCreamFromSummary}
+          showCancelOrderWindow={this.showCancelOrderWindow}
+          isCancelOrderWindowVisible={this.state.isCancelOrderWindowVisible}
+          cancelOrder={this.cancelOrder}
+          switchConfirmWindow={this.switchConfirmWindow}
+          isConfirmOrderWindowVisible={this.state.isConfirmOrderWindowVisible}
+          confirmOrder={this.confirmOrder}
         />
       </div>
     );
