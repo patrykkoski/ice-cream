@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "da98525023098703c664fde4be907eae",
+    "revision": "795ea8f37ebb62b09c90eed83595c525",
     "url": "/ice-cream/index.html"
   },
   {
-    "revision": "3e9d0ae4fe361a4c9d74",
-    "url": "/ice-cream/static/css/main.6b9abfd2.chunk.css"
+    "revision": "cd1202fe02b4d5f57bea",
+    "url": "/ice-cream/static/css/main.d6cce9fc.chunk.css"
   },
   {
     "revision": "cc145ebe40932a017f2d",
     "url": "/ice-cream/static/js/2.2263ed7a.chunk.js"
   },
   {
-    "revision": "3e9d0ae4fe361a4c9d74",
+    "revision": "cd1202fe02b4d5f57bea",
     "url": "/ice-cream/static/js/main.ccca1c84.chunk.js"
   },
   {
