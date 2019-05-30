@@ -7,10 +7,8 @@ import "./IngredientsWindow.css";
 const ingredientsWindow = props => {
   return (
     <div className="ingredients-window-wrapper">
-      <header>Dodaj składniki</header>
       <div className="ingredients-window">
         <div className="all-tastes">
-          <h3>Dodaj smak</h3>
           <div className="ingredients-window-flex ">
             <TasteWindow
               tasteList={props.tasteList}
@@ -19,7 +17,6 @@ const ingredientsWindow = props => {
           </div>
         </div>
         <div className="all-decorations">
-          <h3>Dodaj dekorację</h3>
           <div className="ingredients-window-flex ">
             <DecorationWindow
               decorationList={props.decorationList}
@@ -28,7 +25,6 @@ const ingredientsWindow = props => {
           </div>
         </div>
         <div className="all-sauces">
-          <h3>Dodaj polewę</h3>
           <div className="ingredients-window-flex ">
             <SaucesWindow
               saucesList={props.saucesList}

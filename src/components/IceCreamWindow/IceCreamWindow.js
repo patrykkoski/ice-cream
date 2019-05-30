@@ -14,13 +14,22 @@ const iceCreamWindow = props => {
   });
   return (
     <div className="ice-cream-window">
-      <h3>Podsumowanie loda</h3>
-      <h3>Smaki:</h3>
-      {iceCreamTasteSummary}
-      <h3>Dekoracja:</h3>
-      <IceCreamDecorationSummary decoration={props.iceCreamDecorationSummary} />
-      <h3>Polewa:</h3>
-      <IceCreamSauceSummary sauce={props.iceCreamSauceSummary} />
+      <div className="ice-cream-window-wrapper">
+        <div>
+          <h3>Smaki:</h3>
+          {iceCreamTasteSummary}
+        </div>
+        <div>
+          <h3>Dekoracja:</h3>
+          <IceCreamDecorationSummary
+            decoration={props.iceCreamDecorationSummary}
+          />
+        </div>
+        <div>
+          <h3>Polewa:</h3>
+          <IceCreamSauceSummary sauce={props.iceCreamSauceSummary} />
+        </div>
+      </div>
       <button className="add-to-order" onClick={props.addIceCreamToSummary}>
         Dodaj loda do zamówienia
       </button>
