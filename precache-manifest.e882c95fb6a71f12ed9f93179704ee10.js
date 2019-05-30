@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f88467a25bf2f8bc86ba0d5c261c67f",
+    "revision": "fabd48204b471044825b1fd4f49c6cba",
     "url": "/ice-cream/index.html"
   },
   {
-    "revision": "0e85c88ba74329798c90",
-    "url": "/ice-cream/static/css/main.e2e59d3a.chunk.css"
+    "revision": "51c4197062a278659fba",
+    "url": "/ice-cream/static/css/main.3c2643df.chunk.css"
   },
   {
-    "revision": "cc145ebe40932a017f2d",
-    "url": "/ice-cream/static/js/2.2263ed7a.chunk.js"
+    "revision": "4790c6bb3e116f284a3a",
+    "url": "/ice-cream/static/js/2.54e986ca.chunk.js"
   },
   {
-    "revision": "0e85c88ba74329798c90",
-    "url": "/ice-cream/static/js/main.ccca1c84.chunk.js"
+    "revision": "51c4197062a278659fba",
+    "url": "/ice-cream/static/js/main.002335b4.chunk.js"
   },
   {
     "revision": "4cd096138e0d214582fc",
@@ -36,8 +36,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ice-cream/static/media/Bounty.7c8bd8c8.png"
   },
   {
+    "revision": "4373074e9ec17a6431bd6c96e26e9d16",
+    "url": "/ice-cream/static/media/Bueno.4373074e.png"
+  },
+  {
     "revision": "e9523f6249c89a96f49efa810e40942b",
     "url": "/ice-cream/static/media/Haribo Złote Misie.e9523f62.png"
+  },
+  {
+    "revision": "e9523f6249c89a96f49efa810e40942b",
+    "url": "/ice-cream/static/media/Haribo.e9523f62.png"
   },
   {
     "revision": "a2f74f7bd3f1bd8565a730989619371f",
@@ -56,6 +64,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ice-cream/static/media/Kinder Pingui.80d70b8b.png"
   },
   {
+    "revision": "87f40de29c49b146d6a1e0b1dc20fa5f",
+    "url": "/ice-cream/static/media/King.87f40de2.png"
+  },
+  {
     "revision": "2631ae720f12c717154fdca3fa6d1e81",
     "url": "/ice-cream/static/media/M&M's.2631ae72.png"
   },
@@ -72,6 +84,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ice-cream/static/media/Michałki z Hanki.78fd9bc2.png"
   },
   {
+    "revision": "f5886b1810304018b1bfffeeb74329e6",
+    "url": "/ice-cream/static/media/Michałki.f5886b18.png"
+  },
+  {
     "revision": "3885db752f3024239879fd618cf52845",
     "url": "/ice-cream/static/media/Nescafe.3885db75.png"
   },
@@ -86,6 +102,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "86972a7ec7fb9bf0287563c609691385",
     "url": "/ice-cream/static/media/Pastylki Miętowe.86972a7e.png"
+  },
+  {
+    "revision": "86972a7ec7fb9bf0287563c609691385",
+    "url": "/ice-cream/static/media/Pastylki.86972a7e.png"
+  },
+  {
+    "revision": "80d70b8bf807d00a37a1fcc1fd9fda2f",
+    "url": "/ice-cream/static/media/Pingui.80d70b8b.png"
   },
   {
     "revision": "db1b55bc36fe13f1ef7bbf591e90d56f",
