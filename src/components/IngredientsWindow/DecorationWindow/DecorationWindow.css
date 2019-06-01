@@ -1,3 +1,5 @@
-.decoration-window{
-    width: 16vw;
+.decoration-window {
+  width: 12vw;
+  text-align: center;
+  margin-top: 10px;
 }
