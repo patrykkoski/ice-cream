@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ice-cream/static/css/main.ef4542bb.chunk.css",
+    "main.css": "/ice-cream/static/css/main.d237c18e.chunk.css",
     "main.js": "/ice-cream/static/js/main.e30a18a0.chunk.js",
     "main.js.map": "/ice-cream/static/js/main.e30a18a0.chunk.js.map",
     "runtime~main.js": "/ice-cream/static/js/runtime~main.4fa864c1.js",
@@ -8,9 +8,9 @@
     "static/js/2.54e986ca.chunk.js": "/ice-cream/static/js/2.54e986ca.chunk.js",
     "static/js/2.54e986ca.chunk.js.map": "/ice-cream/static/js/2.54e986ca.chunk.js.map",
     "index.html": "/ice-cream/index.html",
-    "precache-manifest.6f1df33bc08c0c1ea0609542a989246b.js": "/ice-cream/precache-manifest.6f1df33bc08c0c1ea0609542a989246b.js",
+    "precache-manifest.2f6fc3cb22c31edcb8d578b3338123c3.js": "/ice-cream/precache-manifest.2f6fc3cb22c31edcb8d578b3338123c3.js",
     "service-worker.js": "/ice-cream/service-worker.js",
-    "static/css/main.ef4542bb.chunk.css.map": "/ice-cream/static/css/main.ef4542bb.chunk.css.map",
+    "static/css/main.d237c18e.chunk.css.map": "/ice-cream/static/css/main.d237c18e.chunk.css.map",
     "static/media/Banan.png": "/ice-cream/static/media/Banan.5e3b8c3f.png",
     "static/media/Bita Śmietana.png": "/ice-cream/static/media/Bita Śmietana.eb823292.png",
     "static/media/Bonitki.png": "/ice-cream/static/media/Bonitki.8991f4f7.png",
