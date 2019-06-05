@@ -43,7 +43,7 @@ const iceCreamWindow = props => {
           Usuń obecnego loda
         </button>
         <button className="button-show-order" onClick={props.switchSummary}>
-          PODSUMOWANIE ZAMÓWIENIA
+          Zobacz zamówienie
         </button>
       </div>
     </div>
