@@ -45,11 +45,11 @@
 }
 .orders-ice-cream-wrapper {
   display: flex;
-  align-items: center;
+  align-items: top;
   padding: 0px 30px;
 }
 .orders-ice-cream {
-  margin-top: 15px;
+  margin-top: 10px;
   margin-right: 20px;
   background: #eff1f5;
   color: gray;
@@ -61,6 +61,8 @@
 }
 .orders-ice-cream h4 {
   border-bottom: 1px solid gold;
+  margin-top: 0px;
+  text-align: center;
 }
 .orders-ice-cream p {
   color: black;
@@ -71,5 +73,4 @@
   border-radius: 5px;
   border: 1px solid white;
   color: white;
-  bottom: 20px;
 }
