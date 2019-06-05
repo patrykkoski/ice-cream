@@ -11,14 +11,16 @@
 .summary-window-content h3 {
   text-align: center;
   border-bottom: 1px solid gray;
-  background: rgb(42, 43, 58);
   color: white;
   margin-top: 0px;
   padding: 10px;
+  background: #eff1f5;
+  color: gray;
+  box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.75);
 }
 .summary-button-section {
   text-align: center;
-  background-color: rgb(42, 43, 58);
+  background-color: #eff1f5;
   position: absolute;
   width: 100%;
   bottom: 0px;
@@ -29,7 +31,7 @@
   width: 250px;
   margin: 10px;
   color: white;
-  box-shadow: 0px 0px 10px 2px rgb(32, 32, 32);
+  box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.75);
   border: none;
 }
 .summary-button-section .button-back {
@@ -49,29 +51,25 @@
 .orders-ice-cream {
   margin-top: 15px;
   margin-right: 20px;
-  background: rgb(42, 43, 58);
-  color: white;
+  background: #eff1f5;
+  color: gray;
   width: 150px;
   padding: 20px;
-  height: 450px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 2px rgb(32, 32, 32);
+  box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.75);
   position: relative;
 }
 .orders-ice-cream h4 {
   border-bottom: 1px solid gold;
 }
-.orders-ice-cream p{
-  color: gold;
+.orders-ice-cream p {
+  color: black;
 }
 .orders-ice-cream .button-cancel {
-  background-color: red;
+  background-color: rgb(199, 8, 8);
   padding: 10px 15px;
   border-radius: 5px;
   border: 1px solid white;
   color: white;
-  position: absolute;
   bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
 }
