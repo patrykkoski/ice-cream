@@ -26,6 +26,7 @@
   justify-content: flex-end;
 }
 .add-to-order {
+  font-size: 10px;
   border: none;
   border-radius: 0px;
   background-color: rgb(45, 114, 45);
@@ -35,6 +36,7 @@
   box-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 .clear-ice-cream {
+  font-size: 10px;
   border: none;
   border-radius: 0px;
   background-color: rgb(199, 8, 8);
@@ -45,6 +47,7 @@
 }
 
 .button-show-order {
+  font-size: 10px;
   border: none;
   border-radius: 0px;
   background-color: rgb(20, 75, 121);
