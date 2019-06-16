@@ -94,6 +94,18 @@ class Builder extends Component {
     this.setState({ iceCream: statePlaceholder });
   };
 
+  deleteDecorationFromIceCream = () => {
+    let statePlaceholder = this.state.iceCream;
+    statePlaceholder.decoration = "";
+    this.setState({ iceCream: statePlaceholder });
+  };
+
+  deleteSauceFromIceCream = () => {
+    let statePlaceholder = this.state.iceCream;
+    statePlaceholder.sauce = "";
+    this.setState({ iceCream: statePlaceholder });
+  };
+
   removeIngredientsFromIceCream = () => {
     let statePlaceholder = this.state.iceCream;
     statePlaceholder.tastes = ["", ""];
@@ -203,6 +215,8 @@ class Builder extends Component {
           switchConfirmWindow={this.switchConfirmWindow}
           isConfirmOrderWindowVisible={this.state.isConfirmOrderWindowVisible}
           confirmOrder={this.confirmOrder}
+          deleteDecorationFromIceCream={this.deleteDecorationFromIceCream}
+          deleteSauceFromIceCream={this.deleteSauceFromIceCream}
         />
       </div>
     );

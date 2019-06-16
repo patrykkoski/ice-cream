@@ -15,21 +15,25 @@ const iceCreamWindow = props => {
   return (
     <div className="ice-cream-window">
       <div className="ice-cream-window-wrapper">
-        <div>
+        <div className="ice-cream-border">
           <h3>Smaki:</h3>
           <div className="ice-cream-taste-summary-wrapper">
             {iceCreamTasteSummary}
           </div>
         </div>
-        <div>
+        <div className="ice-cream-border">
           <h3>Dekoracja:</h3>
           <IceCreamDecorationSummary
             decoration={props.iceCreamDecorationSummary}
+            deleteDecorationFromIceCream={props.deleteDecorationFromIceCream}
           />
         </div>
-        <div>
+        <div className="ice-cream-border">
           <h3>Polewa:</h3>
-          <IceCreamSauceSummary sauce={props.iceCreamSauceSummary} />
+          <IceCreamSauceSummary
+            sauce={props.iceCreamSauceSummary}
+            deleteSauceFromIceCream={props.deleteSauceFromIceCream}
+          />
         </div>
       </div>
       <div className="ice-cream-section-buttons">

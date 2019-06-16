@@ -20,6 +20,8 @@ const mainWindow = props => {
           iceCreamDecorationSummary={props.iceCreamDecorationSummary}
           iceCreamSauceSummary={props.iceCreamSauceSummary}
           deleteTasteFromIceCream={props.deleteTasteFromIceCream}
+          deleteDecorationFromIceCream={props.deleteDecorationFromIceCream}
+          deleteSauceFromIceCream={props.deleteSauceFromIceCream}
           switchSummary={props.switchSummary}
           addIceCreamToSummary={props.addIceCreamToSummary}
           removeIngredientsFromIceCream={props.removeIngredientsFromIceCream}
