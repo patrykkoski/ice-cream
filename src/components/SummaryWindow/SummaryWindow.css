@@ -22,7 +22,8 @@
   text-align: center;
   background-color: #eff1f5;
   position: absolute;
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
   bottom: 0px;
   height: 100px;
 }
@@ -45,7 +46,7 @@
 }
 .orders-ice-cream-wrapper {
   display: flex;
-  align-items: top;
+  overflow-x: scroll;
   padding: 0px 30px;
 }
 .orders-ice-cream {
