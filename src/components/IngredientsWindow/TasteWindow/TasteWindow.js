@@ -11,6 +11,7 @@ const tasteWindow = props => {
           onClick={() => props.addTasteToIceCream(taste.name)}
         >
           <Taste id={taste.id} name={taste.name} />
+          <p>{taste.name}</p>
         </div>
       );
     }

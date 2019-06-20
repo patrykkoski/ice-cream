@@ -12,6 +12,7 @@ const saucesWindow = props => {
           onClick={() => props.addSauceToIceCream(sauce.name)}
         >
           <Sauce id={sauce.id} name={sauce.name} />
+          <p>{sauce.name}</p>
         </div>
       );
     }

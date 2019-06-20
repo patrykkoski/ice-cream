@@ -9,7 +9,6 @@ const sauce = props => {
         src={require("../../../../assets/" + props.name + ".png")}
         alt={"img" + props.name}
       />
-      <p>{props.name}</p>
     </div>
   );
 };

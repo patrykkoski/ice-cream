@@ -12,6 +12,7 @@ const decorationWindow = props => {
           onClick={() => props.addDecorationToIceCream(decoration.name)}
         >
           <Decoration id={decoration.id} name={decoration.name} />
+          <p>{decoration.name}</p>
         </div>
       );
     }
