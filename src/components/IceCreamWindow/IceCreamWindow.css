@@ -13,8 +13,14 @@
   display: flex;
   width: 70%;
 }
-.ice-cream-border{
+.ice-cream-border {
   border-right: 1px solid gray;
+}
+.sum-50 {
+  width: 50%;
+}
+.sum-25 {
+  width: 25%;
 }
 .ice-cream-window-wrapper h3 {
   text-align: left;
