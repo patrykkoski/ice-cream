@@ -38,7 +38,7 @@ const summaryWindow = props => {
               className="button-cancel"
               onClick={props.showCancelOrderWindow}
             >
-              ANULUJ ZAMÓWIENIA
+              ANULUJ ZAMÓWIENIE
             </button>
             <button
               className="button-order"

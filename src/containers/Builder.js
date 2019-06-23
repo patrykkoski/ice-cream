@@ -173,6 +173,7 @@ class Builder extends Component {
   };
 
   confirmOrder = () => {
+    let d = new Date();
     const o = this.state.orderSummary;
     axios
       .post("/test.json", o)
