@@ -38,16 +38,16 @@ const iceCreamWindow = props => {
       </div>
       <div className="ice-cream-section-buttons">
         <button className="add-to-order" onClick={props.addIceCreamToSummary}>
-          DODAJ
+          DODAJ LODA DO ZAMÓWIENIA
         </button>
         <button
           className="clear-ice-cream"
           onClick={props.removeIngredientsFromIceCream}
         >
-          USUŃ
+          USUŃ OBECNEGO LODA
         </button>
         <button className="button-show-order" onClick={props.switchSummary}>
-          PODSUMOWANIE
+          PODSUMOWANIE ZAMÓWIENIA
         </button>
       </div>
     </div>
